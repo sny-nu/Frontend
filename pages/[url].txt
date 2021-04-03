@@ -1,0 +1,40 @@
+// import { Component } from "react";
+// import Layout from "../components/layout.js/empty";
+// import UrlShortener from "../components/urlShortener";
+// import api from "../plugins/axios";
+
+// export default class Url extends Component {
+//     static async getInitialProps ({ query, res }) {
+//         try {
+//             const urlHash = query.url;
+//             const response = await api.get(`/v1/url/${urlHash}`)
+//             const url = response.data;
+
+//             // Send user to redirect if it has no threats and safe is turned off
+//             if (url.originalUrl) {
+//                 res.writeHead(301, {
+//                     Location: url.originalUrl
+//                 });
+//                 res.end();
+//             }
+//             return {
+//                 urlData: res.data
+//             }
+//         }
+//         catch (error) {
+//             console.log(error);
+//             return {
+//                 notFound: true
+//             }
+//         }
+//     }
+
+//     render() {
+//         const url = this.props.urlData;
+//         // if (!url) {
+//         //     return (
+//         //         <DefaultErrorPage statusCode={404} />
+//         //     )
+//         // }
+//     }
+// }
