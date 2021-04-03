@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: `https://test-api.sny.nu/`
+    baseURL: `https://api.sny.nu/`
 });
