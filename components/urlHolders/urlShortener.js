@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { toast } from "react-toastify";
-import { createUrl } from '../services/url';
-import { validateUrl } from '../utils/url';
+import { createUrl } from '../../services/url';
+import { validateUrl } from '../../utils/url';
 
 export default class UrlShortener extends Component {
     constructor(props) {

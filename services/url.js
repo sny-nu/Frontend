@@ -3,11 +3,9 @@ import { toast } from 'react-toastify';
 
 export async function createUrl(url) {
     try {
-        console.log(url);
         const response = await api.post("/v1/url", url);
-        console.log(response);
+
         if (response.status >= 200 && response.status < 400) {
-            console.log("test");
             return response.data.shortUrl;
         }
     } catch(error) {
@@ -21,5 +19,17 @@ export async function createUrl(url) {
             progress: undefined,
         });
         console.log(error);
+    }
+}
+
+export async function getUrl(urlHash) {
+    try {
+        const response = await api.get(`/v1/url/${urlHash}`);
+
+        if (response.status >= 200 && response.status < 400) {
+            return response.data;
+        }
+    } catch (error) {
+
     }
 }

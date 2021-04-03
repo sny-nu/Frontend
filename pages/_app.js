@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Component {...pageProps} />
-            <ToastContainer className="rounded-full" />
+            <ToastContainer className="rounded-full text-sm" style={{ width: "400px" }} />
         </>
     )
 }
