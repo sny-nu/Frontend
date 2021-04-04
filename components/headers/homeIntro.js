@@ -1,4 +1,4 @@
-import UrlShortener from "../urlHolders/urlShortener";
+import UrlShortener from "../urlShortener";
 
 export default function HomeIntro() {
     return (

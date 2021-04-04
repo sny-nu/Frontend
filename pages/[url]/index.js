@@ -1,4 +1,4 @@
-import Layout from "../../components/layout.js/default";
+import Layout from "../../layouts/default";
 import HomeIntro from "../../components/headers/homeIntro";
 import { Component } from "react";
 import { getUrl } from "../../services/url";
@@ -36,8 +36,7 @@ export default class UrlPage extends Component {
                 { url.hasThreats == 1 ? (
                     <HomeIntro />
                 ) : (
-                    // <Redirecter />
-                    <h1>Test</h1>
+                    <Redirecter url={url.originalUrl} />
                 )}
             </Layout>
         )

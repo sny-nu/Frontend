@@ -1,11 +1,11 @@
-import Footer from "../global/footer";
-import Navbar from "../global/navbar";
+import Footer from "../components/global/footer";
+import Navbar from "../components/global/navbar";
 
 export default function Layout({ children }) {
     return (
         <div className="bg-gray-900">
-            <Navbar />
             <div className="min-h-screen h-full">
+                <Navbar />
                 { children }
             </div>
             <Footer />
