@@ -14,13 +14,13 @@ export default function Redirecter({ url }) {
         }
     }, [countDown]);
 
-    const changeRedirect = (() => {
+    function changeRedirect() {
         if (redirectBlocked == false) {
             setRedirectBlocked(!redirectBlocked);
         } else {
             window.location.href = url;
         }
-    })
+    }
 
     return (
         <div className="mx-auto container py-20 md:py-48 text-center sm:px-4 px-6">

@@ -4,41 +4,47 @@ import { Component } from "react";
 import { getUrl } from "../../services/url";
 import DefaultErrorPage from 'next/error'
 import Redirecter from "../../components/headers/redirecter";
+import Threat from "../../components/headers/threat";
 
-
-export default class UrlPage extends Component {
-    static async getInitialProps ({ query, res }) {
-        const urlHash = query.url;
-        const url = await getUrl(urlHash);
-
-        // Send user to redirect if it has no threats and safe is turned off
-        if (url != undefined) {
-            if (url.hasThreats == 0 && url.safeRedirect == 0) {
-                res.writeHead(301, {
-                    Location: url.originalUrl
-                });
-                res.end();
-            }
-        }
-        return {
-            urlData: url
-        }
-    }
-
-    render() {
-        const url = this.props.urlData;
-
-        if (!url) {
-            return <DefaultErrorPage statusCode={404} />
-        }
+export default function UrlPage({ urlData, notFound }) {
+    if (notFound) {
+        return <DefaultErrorPage statusCode={404} />
+    } else {
         return (
             <Layout>
-                { url.hasThreats == 1 ? (
-                    <HomeIntro />
+                { urlData.hasThreats == 1 ? (
+                    <Threat url={urlData.originalUrl} threats={urlData.threats} />
                 ) : (
-                    <Redirecter url={url.originalUrl} />
+                    <Redirecter url={urlData.originalUrl} />
                 )}
             </Layout>
         )
+    }
+}
+
+export async function getServerSideProps ({ query, res }) {
+    const urlHash = query.url;
+    const url = await getUrl(urlHash);
+
+    // Send user to redirect if it has no threats and safe is turned off
+    if (url != undefined) {
+        if (url.hasThreats == 0 && url.safeRedirect == 0) {
+            res.writeHead(301, {
+                Location: url.originalUrl
+            });
+            res.end();
+        }
+    } 
+    if (url == undefined) {
+        return {
+            props: {
+                notFound: true
+            }
+        }
+    }
+    return {
+        props: {
+            urlData: url
+        }
     }
 }
