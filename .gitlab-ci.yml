@@ -7,8 +7,10 @@ stages:
 build_test:
   stage: build
   before_script:
+    - echo $CI_DEPLOY_USER
     - docker login -u "$CI_DEPLOY_USER" -p "$CI_DEPLOY_PASSWORD" $CI_REGISTRY
   script:
+    - echo $TEST_BACKEND_URL
     - docker build --no-cache --build-arg BACKEND_URL="$TEST_BACKEND_URL" --build-arg ACKEE_KEY="$TEST_ACKEE_KEY" --build-arg ACKEE_URL="$ACKEE_URL" 
       -t $CI_REGISTRY/snynu/frontend-react/test:${CI_COMMIT_SHA} -t $CI_REGISTRY/snynu/frontend-react/test:latest .
     - docker push $CI_REGISTRY/snynu/frontend-react/test:${CI_COMMIT_SHA}
