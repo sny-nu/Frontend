@@ -10,7 +10,7 @@ export async function createUrl(url) {
         }
     } catch(error) {
         toast.error("Whoops, something went wrong!", {
-            position: "bottom-center",
+            position: "top-center",
             autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,

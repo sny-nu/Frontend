@@ -17,7 +17,7 @@ export default class UrlShortener extends Component {
             copied: false,
             loading: false,
             shortUrl: false,
-            invalidUrl: "The URL you are trying to short is not a valid URL.",
+            invalidUrl: "The entered URL is not a valid URL.",
             snyUrl: "This URL is already a sny.nu URL"
         }
     }
@@ -68,7 +68,7 @@ export default class UrlShortener extends Component {
 
     showError = (errorMessage) => {
         toast.error(errorMessage, {
-            position: "bottom-center",
+            position: "top-center",
             autoClose: 5000,
             hideProgressBar: true,
             closeOnClick: true,

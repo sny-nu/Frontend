@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
             {/* { snConsent != undefined ? null : <Cookies onClick={setCookie} /> } */}
             <Component {...pageProps} />
-            <ToastContainer className="rounded-full text-sm" style={{ width: "400px" }} />
+            <ToastContainer className="rounded-full text-sm md:mx-auto" />
         </>
     )
 }
