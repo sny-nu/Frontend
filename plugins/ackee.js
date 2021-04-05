@@ -12,8 +12,6 @@ export default function Ackee() {
             isDetailed = true;
         }
 
-        console.log(isDetailed);
-
         const ackee = ackeeTracker.create({
             server: 'https://ackee.thomaur.dev',
             domainId: "df49d72a-4886-431d-b002-5529fac32aec",//'e039a408-3e7d-4f79-b2d8-b6ac13dbfe43',
