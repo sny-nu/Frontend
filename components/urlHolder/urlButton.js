@@ -12,10 +12,11 @@ export default function UrlInput({ children, onClick, color }) {
             break;
     }
     return (
-        <button className={`${cssColor} h-12 md:w-48 relative top-0 right-0 text-gray-900 text-base font-bold 
+        <button className={`${cssColor} h-14 md:w-48 relative top-0 right-0 text-gray-900 text-base font-bold 
             leading-6 transition duration-500 ease-in-out focus:outline-none
             rounded-full md:rounded-none w-full md:h-16`}
             onClick={onClick}
+            name="url button"
         >
             { children }
         </button>

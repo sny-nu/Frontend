@@ -6,7 +6,9 @@ export default function Layout({ children }) {
         <div className="bg-gray-900">
             <div className="min-h-screen h-full">
                 <Navbar />
-                { children }
+                <main>
+                    { children }
+                </main>
             </div>
             <Footer />
         </div>

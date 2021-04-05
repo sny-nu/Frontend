@@ -10,6 +10,7 @@ export default function Cookies({ onClick }) {
                     <button
                         value={true}
                         onClick={onClick}
+                        name="agree"
                         className="bg-green-500 w-1/2 py-2 mr-2 rounded-md focus:outline-none"
                     >
                         Allow
@@ -17,6 +18,7 @@ export default function Cookies({ onClick }) {
                     <button
                         value={false}
                         onClick={onClick}
+                        name="decline"
                         className="bg-red-500 w-1/2 py-2 rounded-md focus:outline-none"
                     >
                         Decline

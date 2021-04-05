@@ -34,7 +34,7 @@ export default function Redirecter({ url }) {
             >
                 { redirectBlocked ?  "Stopped" : (countDown == 0 ? "Redirecting" : (countDown / 10).toFixed(1)) }
             </h1>
-            <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-700 
+            <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-400 
                     md:mt-6 sm:text-base md:max-w-xl md:text-lg xl:text-xl"
             >
                 If you don't want to be redirected to this URL please click on the red stop button below to stay on this page.

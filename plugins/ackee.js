@@ -7,17 +7,17 @@ export default function Ackee() {
     const router = useRouter();
     // Ackee -> analytics
     useEffect(() => {
-        let isDetailed = false;
-        if (cookie.load("sn-cookie-consent") == "true") {
-            isDetailed = true;
-        }
+        // let isDetailed = false;
+        // if (cookie.load("sn-cookie-consent") == "true") {
+        //     isDetailed = true;
+        // }
 
         const ackee = ackeeTracker.create({
             server: 'https://ackee.thomaur.dev',
             domainId: "df49d72a-4886-431d-b002-5529fac32aec",//'e039a408-3e7d-4f79-b2d8-b6ac13dbfe43',
         }, {
             ignoreLocalhost: false,
-            detailed: isDetailed,
+            detailed: true,
         });
 
         ackee.record()

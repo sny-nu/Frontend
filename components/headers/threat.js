@@ -20,12 +20,12 @@ export default function Threat({ url, threats }) {
                 v-for="threat in threats"
             >
             </h1>
-            <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-500 
+            <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-400 
                     md:mt-6 sm:text-base md:max-w-xl md:text-lg xl:text-xl"
             >
                 To check the URLs that are shortened are safe to use. We use a Web Risk API to check if URLs are registered as unsafe.
             </p>
-            <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-500 
+            <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-400 
                     md:mt-6 sm:text-base md:max-w-xl md:text-lg xl:text-xl"
             >
                 Still wanna go to the URL? Click on the redirect button
