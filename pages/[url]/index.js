@@ -1,14 +1,12 @@
 import Layout from "../../layouts/default";
-import HomeIntro from "../../components/headers/homeIntro";
-import { Component } from "react";
 import { getUrl } from "../../services/url";
-import DefaultErrorPage from 'next/error'
 import Redirecter from "../../components/headers/redirecter";
 import Threat from "../../components/headers/threat";
+import Error404 from "../error/404";
 
 export default function UrlPage({ urlData, notFound }) {
     if (notFound) {
-        return <DefaultErrorPage statusCode={404} />
+        return <Error404 />
     } else {
         return (
             <Layout>

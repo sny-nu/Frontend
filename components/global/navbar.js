@@ -7,7 +7,7 @@ export default function Navbar() {
     const [ isOpen, setOpen ] = useState(false);
 
     return (
-        <nav className="lg:container mx-auto bg-gray-900 w-full lg:px-6 antialiased max-w-xl">
+        <nav className="lg:container mx-auto bg-gray-900 w-full lg:px-6 antialiased">
             <div className="flex items-center justify-between px-6 py-3 h-24">
                 <div className="z-50">
                     <Link href="/"><a className="w-1/4 p-1 text-xl font-black leading-none text-white">sny<span className="text-green-500">.</span>nu</a></Link>
