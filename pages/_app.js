@@ -4,10 +4,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import Cookies from '../components/global/cookies';
 import '../styles/globals.css'
 import { useEffect, useState } from 'react';
+import * as ackeeTracker from 'ackee-tracker';
+import Ackee from '../plugins/ackee';
 
 function MyApp({ Component, pageProps }) {
     const [snConsent, setSnConsent] = useState(undefined);
 
+    // Cookie functions
     useEffect(() => {
         snConsent == undefined && setSnConsent(cookie.load("sn-cookie-consent"));
     }, [snConsent]);
@@ -24,6 +27,10 @@ function MyApp({ Component, pageProps }) {
         })
     }
 
+    // Ackee
+    Ackee(); 
+
+    // Return
     return (
         <>
             { snConsent === undefined ? <Cookies onClick={setCookie} /> : null }
