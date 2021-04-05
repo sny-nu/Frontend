@@ -25,7 +25,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="md:hidden z-50">
-                    <button type="button" onClick={() => setOpen(isOpen => !isOpen)} name="open mobile menu" className="mobileMenu block text-gray-500 pr-3 hover:text-white focus:text-white focus:outline-none">
+                    <button type="button" onClick={() => setOpen(isOpen => !isOpen)} aria-label="open mobile menu" className="mobileMenu block text-gray-500 pr-3 hover:text-white focus:text-white focus:outline-none">
                         { isOpen ? <Close /> : <Hamburger /> }
                     </button>
                 </div>
