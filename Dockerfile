@@ -1,5 +1,9 @@
 FROM node:12-alpine AS base
 
+ARG BACKEND_URL
+ARG ACKEE_URL
+ARG ACKEE_KEY
+
 WORKDIR /srv
 
 COPY package*.json /srv/
@@ -10,6 +14,9 @@ COPY . /srv/
 
 EXPOSE 3000
 
+ENV BACKEND_BASE_URL=${BACKEND_URL}
+ENV ACKEE_URL=${ACKEE_URL}
+ENV ACKEE_KEY=${ACKEE_KEY}
 
 RUN npm run build
 CMD npm start
