@@ -6,13 +6,10 @@ export default function Cookies() {
     const [show, setShow] = useState(false);
 
     const expires = new Date()
-    expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 14);
-    console.log(expires);
 
     const allowCookies = () => {
         setShow(false);
         cookie.save("sn-cookie-consent", true, {
-            expires,
             maxAge: 1000,
             sameSite: "strict"
         })
@@ -21,7 +18,6 @@ export default function Cookies() {
     const disallowCookies = () => {
         setShow(false);
         cookie.save("sn-cookie-consent", false, {
-            expires,
             maxAge: 1000,
             sameSite: "strict"
         })
