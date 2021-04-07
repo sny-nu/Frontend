@@ -6,7 +6,9 @@ export async function createUrl(url) {
         const response = await api.post("/v1/url", url);
 
         const jsonHistory = localStorage.getItem('sn-history');
-        const history = JSON.parse(jsonHistory);
+        const history = JSON.parse(jsonHistory) == null ? [] : JSON.parse(jsonHistory);
+
+        console.log(history);
 
         if (response.status >= 200 && response.status < 400) {
             history.push(response.data);
