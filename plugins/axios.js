@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: `https://test-api.sny.nu/`
+    baseURL: process.env.BACKEND_BASE_URL
 });

@@ -1,0 +1,24 @@
+FROM node:12-alpine AS base
+
+ARG BACKEND_URL
+ARG ACKEE_URL
+ARG ACKEE_KEY
+ARG SENTRY_DSN
+
+WORKDIR /srv
+
+COPY package*.json /srv/
+
+RUN npm install
+
+COPY . /srv/
+
+EXPOSE 3000
+
+ENV BACKEND_BASE_URL=${BACKEND_URL}
+ENV ACKEE_URL=${ACKEE_URL}
+ENV ACKEE_KEY=${ACKEE_KEY}
+ENV SENTRY_DSN=${SENTRY_DSN}
+
+RUN npm run build
+CMD npm start
