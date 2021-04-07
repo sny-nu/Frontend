@@ -5,7 +5,13 @@ export async function createUrl(url) {
     try {
         const response = await api.post("/v1/url", url);
 
+        const jsonHistory = localStorage.getItem('sn-history');
+        const history = JSON.parse(jsonHistory);
+
         if (response.status >= 200 && response.status < 400) {
+            history.push(response.data);
+            localStorage.setItem('sn-history', JSON.stringify(history))
+
             return response.data.shortUrl;
         }
     } catch(error) {
