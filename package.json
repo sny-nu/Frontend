@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sentry/react": "^6.2.5",
+    "@sentry/tracing": "^6.2.5",
     "@tailwindcss/forms": "^0.3.2",
     "ackee-tracker": "^4.0.0",
     "axios": "^0.21.1",
