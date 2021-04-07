@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import cookie from 'react-cookies';
+import useAckee from '../../hooks/useAckee';
 
 export default function Cookies() {
     const [show, setShow] = useState(false);
@@ -10,7 +11,7 @@ export default function Cookies() {
     const allowCookies = () => {
         setShow(false);
         cookie.save("sn-cookie-consent", true, {
-            maxAge: 1000,
+            maxAge: 365 * 86400,
             sameSite: "strict"
         })
     }
@@ -18,7 +19,7 @@ export default function Cookies() {
     const disallowCookies = () => {
         setShow(false);
         cookie.save("sn-cookie-consent", false, {
-            maxAge: 1000,
+            maxAge: 365 * 86400,
             sameSite: "strict"
         })
     }
@@ -26,7 +27,6 @@ export default function Cookies() {
     useEffect(() => {
         setShow(cookie.load("sn-cookie-consent") === undefined)
     }, [])
-    
 
     return show ? (
         <section className="bg-gray-800">

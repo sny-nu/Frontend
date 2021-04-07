@@ -7,7 +7,7 @@ export default function Error404() {
         <>
             <div className="flex flex-col h-screen bg-gray-900 mx-auto">
                 <Navbar />
-                <div className="m-auto lg:w-8/12 px-6">
+                <div className="m-auto lg:w-10/12 lg:container px-6">
                     <p className="text-7xl font-extrabold mt-4 text-red-500">Error 404</p>
                     <h1 className="text-2xl text-white font-extrabold leading-10
                         sm:text-3xl sm:leading-none md:text-4xl xl:text-5xl mb-6">

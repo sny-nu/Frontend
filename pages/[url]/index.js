@@ -1,7 +1,7 @@
 import Layout from "../../layouts/default";
 import { getUrl } from "../../services/url";
-import Redirecter from "../../components/headers/redirecter";
-import Threat from "../../components/headers/threat";
+import Redirecter from "../../components/page/url/redirecter";
+import Threat from "../../components/page/url/threat";
 import Error404 from "../error/404";
 
 export default function UrlPage({ urlData, notFound }) {
