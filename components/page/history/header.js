@@ -35,7 +35,7 @@ export default function HistoryHeader() {
                 <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-400 
                     md:mt-6 sm:text-base md:max-w-xl md:text-lg xl:text-lg"
                 >
-                    Unfortunatly you have didn't accept or rejected cookies. <br />
+                    Unfortunatly you haven't accepted cookies or rejected them. <br />
                     This is why you can't see a history of your created sny.nu urls.
                 </p>
                 )
