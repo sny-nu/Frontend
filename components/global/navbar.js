@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export default function Navbar() {
     const [ isOpen, setOpen ] = useState(false);
+    
 
     return (
         <nav className="lg:container mx-auto bg-gray-900 w-full lg:px-6 antialiased">
@@ -20,6 +21,13 @@ export default function Navbar() {
                                 className="inline-block py-2 mx-2 md:font-medium font-semibold md:px-0 lg:mx-3 md:text-center 
                                     focus:text-green-500 hover:text-green-500 transition duration-300 ease-in-out">
                                 Home
+                            </a>
+                        </Link>
+                        <Link href="/history">
+                            <a onClick={() => setOpen(isOpen => false)}
+                                className="inline-block py-2 mx-2 md:font-medium font-semibold md:px-0 lg:mx-3 md:text-center 
+                                    focus:text-green-500 hover:text-green-500 transition duration-300 ease-in-out">
+                                History
                             </a>
                         </Link>
                     </div>

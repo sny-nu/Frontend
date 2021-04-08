@@ -6,7 +6,7 @@ export default function Layout({ children }) {
         <div className="bg-gray-900">
             <div className="min-h-screen h-full">
                 <Navbar />
-                <main>
+                <main className="lg:container mx-auto bg-gray-900 w-full lg:px-6 antialiased">
                     { children }
                 </main>
             </div>
