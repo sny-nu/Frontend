@@ -26,15 +26,7 @@ const useAckee = () => {
     useEffect(() => {
         if (ackee) return
         setAckee(initAckee())
-    }, []);
-
-    // useEffect(() => {
-    //     const handleRouteChange = (url) => {
-    //         if (ackee) return
-    //         setAckee(initAckee());
-    //     }
-    //     router.events.on('routeChangeComplete', handleRouteChange)
-    // }, [router.events])
+    }, [],[router.event]);
 
     return ackee;
 }

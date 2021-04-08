@@ -17,7 +17,6 @@ export default function Threat({ url, threats }) {
             ))}
             <h1 
                 className="text-4xl text-green-500 font-black"
-                v-for="threat in threats"
             >
             </h1>
             <p className="max-w-lg mx-auto mt-3 text-sm text-center text-gray-400 
