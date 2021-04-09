@@ -6,6 +6,7 @@ import UrlHolderLayout from "./urlHolder/urlHolderLayout";
 import UrlInput from "./urlHolder/urlInput";
 import UrlButton from "./urlHolder/urlButton";
 import Loader from "./utils/loader";
+import Copy from './global/svg/copy';
 import SafeRedirect from "./safeRedirect";
 
 export default class UrlShortener extends Component {
@@ -105,7 +106,7 @@ export default class UrlShortener extends Component {
                         </UrlButton>
                     ) : (
                         <UrlButton onClick={this.copyUrl} color="green">
-                            { copied ? "Copied" : "Copy" }
+                            { copied ? "Copied" : <div className="flex flex-row justify-center"><Copy /><span className="ml-1">Copy</span></div> }
                         </UrlButton>
                     )}
                 </UrlHolderLayout>
