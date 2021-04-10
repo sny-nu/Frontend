@@ -3,7 +3,7 @@ import UrlShortener from "../../urlShortener";
 
 export default function HomeIntro() {
     return (
-        <div className="mx-auto container py-20 md:py-48 text-center sm:px-4 px-6">
+        <div className="mx-auto container py-16 md:pt-48 text-center sm:px-4 px-6">
             <h1 className="text-4xl text-white font-extrabold leading-10
                     sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl"
             >
