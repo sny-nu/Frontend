@@ -6,6 +6,7 @@ import UrlHolderLayout from "./urlHolder/urlHolderLayout";
 import UrlInput from "./urlHolder/urlInput";
 import UrlButton from "./urlHolder/urlButton";
 import Loader from "./utils/loader";
+import { ClipboardCopyIcon } from '@heroicons/react/outline'
 import SafeRedirect from "./safeRedirect";
 
 export default class UrlShortener extends Component {
@@ -105,7 +106,7 @@ export default class UrlShortener extends Component {
                         </UrlButton>
                     ) : (
                         <UrlButton onClick={this.copyUrl} color="green">
-                            { copied ? "Copied" : "Copy" }
+                            { copied ? "Copied" : <div className="flex flex-row justify-center"><ClipboardCopyIcon className="h-6 w-6" /><span className="ml-1">Copy</span></div> }
                         </UrlButton>
                     )}
                 </UrlHolderLayout>

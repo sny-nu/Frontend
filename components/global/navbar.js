@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Hamburger from './svg/hamburger';
-import Close from './svg/close';
+import { XIcon, MenuIcon } from '@heroicons/react/outline'
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -34,7 +33,7 @@ export default function Navbar() {
                 </div>
                 <div className="md:hidden z-50">
                     <button type="button" onClick={() => setOpen(isOpen => !isOpen)} aria-label="open mobile menu" className="mobileMenu block text-gray-500 pr-3 hover:text-white focus:text-white focus:outline-none">
-                        { isOpen ? <Close /> : <Hamburger /> }
+                        { isOpen ? <XIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" /> }
                     </button>
                 </div>
             </div>
