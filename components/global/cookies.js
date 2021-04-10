@@ -37,14 +37,14 @@ export default function Cookies() {
                     <button
                         onClick={allowCookies}
                         name="agree"
-                        className="bg-green-500 w-1/2 py-2 mr-2 rounded-md focus:outline-none"
+                        className="bg-green-500 w-1/2 py-2 mr-2 rounded-full focus:outline-none"
                     >
                         Allow
                     </button> 
                     <button
                         onClick={disallowCookies}
                         name="decline"
-                        className="bg-red-500 w-1/2 py-2 rounded-md focus:outline-none"
+                        className="bg-red-500 w-1/2 py-2 rounded-full focus:outline-none"
                     >
                         Decline
                     </button> 

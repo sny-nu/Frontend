@@ -1,3 +1,4 @@
+import BigText from "../../ui/text/bigText";
 import UrlShortener from "../../urlShortener";
 
 export default function HomeIntro() {
@@ -9,12 +10,10 @@ export default function HomeIntro() {
                 Shorten your <span className="text-green-500">URLs</span> now <br />
                 for <span className="text-green-500">easily</span> sharing.
             </h1>
-            <p className="max-w-lg mx-auto mt-6 text-sm text-center text-gray-400 
-                    md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl"
-            >
+            <BigText>
                 Start shortening your urls right now by filling in the url in the 
                 input and click on short it.
-            </p>
+            </BigText>
             
             <UrlShortener />
 
