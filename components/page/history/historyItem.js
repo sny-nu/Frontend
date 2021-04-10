@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Copy from "../../global/svg/copy"
+import { ClipboardCopyIcon } from '@heroicons/react/outline'
 
 export default function HistoryItem({ url }) {
     const [copied, setCopied] = useState(false);
@@ -24,12 +24,12 @@ export default function HistoryItem({ url }) {
                 </div>
             ) : (
                 <div className="bg-gray-700 rounded-full my-4 md:my-0 text-gray-900 flex flex-row">
-                    <div className="text-left truncate w-11/12 py-4 px-6">
+                    <div className="text-left truncate w-11/12 py-4 px-6 text-white">
                         <p className="text-base font-bold">{ url.shortUrl }</p>
                         <div className="text-xs truncate">{ url.originalUrl }</div>
                     </div>
                     <button className="rounded-full w-16 h-14 m-2 p-auto bg-green-500 focus:outline-none hover:bg-green-400 transition ease-in-out duration-300 hover:text-gray-700" onClick={clickCopy}>
-                        <Copy position="center" />
+                        <ClipboardCopyIcon className="w-6 h-6 mx-auto" />
                     </button>
                 </div>
             )}

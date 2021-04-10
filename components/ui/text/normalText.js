@@ -1,8 +1,6 @@
-export default function NormalText({ children }) {
+export default function NormalText({ children, className }) {
     return (
-        <p className="max-w-lg mx-auto mt-3 text-center text-gray-400 
-            md:mt-6 text-base md:max-w-xl"
-        >
+        <p className={"text-center text-gray-400 text-base " + className}>
             { children }
         </p>
     )

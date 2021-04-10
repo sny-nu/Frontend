@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.0",
     "@sentry/react": "^6.2.5",
     "@sentry/tracing": "^6.2.5",
     "@tailwindcss/forms": "^0.3.2",
