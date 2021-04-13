@@ -3,6 +3,7 @@ import { getUrl } from "../../services/url";
 import Redirecter from "../../components/page/url/redirecter";
 import Threat from "../../components/page/url/threat";
 import Error404 from "../error/404";
+import Head from 'next/head';
 
 export default function UrlPage({ urlData, notFound }) {
     if (notFound) {
@@ -10,6 +11,9 @@ export default function UrlPage({ urlData, notFound }) {
     } else {
         return (
             <Layout>
+                <Head>
+                    <title>Short Url | sny.nu</title>
+                </Head>
                 { urlData.hasThreats == 1 ? (
                     <Threat url={urlData.originalUrl} threats={urlData.threats} />
                 ) : (

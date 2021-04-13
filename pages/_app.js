@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>sny.nu ~ url shortener</title>
+                <title>Url Shortener | sny.nu</title>
             </Head>
             <Tools />
             <Cookies />
