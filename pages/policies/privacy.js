@@ -1,8 +1,12 @@
 import Layout from '../../layouts/default';
+import Head from 'next/head';
 
 export default function Privacy() {
     return(
         <Layout>
+            <Head>
+                <title>Privacy Policy | sny.nu</title>
+            </Head>
             <div className="lg:container mx-auto bg-gray-900 w-full lg:px-12 antialiased max-w-xl px-6 text-white">
                 <h1 className="text-3xl text-white font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
                     Privacy Policy sny<span className="text-green-500">.</span>nu

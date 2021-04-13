@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import Footer from '../../components/global/footer';
 import Navbar from '../../components/global/navbar';
+import Head from 'next/head';
 
 export default function Error404() {
     return (
         <>
+            <Head>
+                <title>404 | sny.nu</title>
+            </Head>
             <div className="flex flex-col h-screen bg-gray-900 mx-auto">
                 <Navbar />
                 <div className="m-auto lg:w-10/12 lg:container px-6">
