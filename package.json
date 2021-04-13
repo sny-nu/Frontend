@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node sitemapGenerator.js && next build",
     "start": "next start"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.0",
     "@sentry/react": "^6.2.5",
     "@sentry/tracing": "^6.2.5",
+    "@sergeymyssak/nextjs-sitemap": "^1.1.1",
     "@tailwindcss/forms": "^0.3.2",
     "ackee-tracker": "^4.0.0",
     "axios": "^0.21.1",
