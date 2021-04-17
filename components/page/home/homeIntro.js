@@ -1,5 +1,5 @@
 import BigText from "../../ui/text/bigText";
-import UrlShortener from "../../urlShortener";
+import UrlShortener from "../../ui/url/urlShortener";
 
 export default function HomeIntro() {
     return (

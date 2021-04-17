@@ -11,7 +11,7 @@ export default function Navbar() {
         <nav className="lg:container mx-auto bg-gray-900 w-full lg:px-6 antialiased">
             <div className="flex items-center justify-between px-6 py-3 h-24">
                 <div className="z-50 flex flex-row">
-                <Link href="/"><Logo className="w-12 h-12 mr-4 cursor-pointer" /></Link>
+                <Link href="/"><a><Logo className="w-12 h-12 mr-4 cursor-pointer" /></a></Link>
                     <Link href="/"><a className="w-1/4 p-1 text-xl my-auto font-black leading-none text-white">sny<span className="text-green-500">.</span>nu</a></Link>
                 </div>
                 <div className={(isOpen == true ? "z-40 fixed top-0 left-0 h-full w-full bg-gray-900 flex flex-col justify-center" : "hidden") + " md:w-3/4  md:flex-row md:flex"}>

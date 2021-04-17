@@ -9,7 +9,7 @@ export default function Logo({ className, color}) {
         <svg className={className} width="1131.371" height="1131.371" viewBox="0 0 1131.371 1131.371">
             <defs>
                 <linearGradient id="a" x1="0.846" y1="-0.014" x2="1.507" y2="0.348" gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#14b8a6"/>
+                    <stop offset="0" stopColor="#10b981"/><stop offset="1" stopColor="#14b8a6"/>
                 </linearGradient>
             </defs>
             <g transform="translate(237.588 -520.43) rotate(45)">
