@@ -1,11 +1,11 @@
 import { Component } from "react";
 import { toast } from "react-toastify";
-import { createUrl } from '../services/url';
-import { validateUrl } from '../utils/url';
-import UrlHolderLayout from "./urlHolder/urlHolderLayout";
-import UrlInput from "./urlHolder/urlInput";
-import UrlButton from "./urlHolder/urlButton";
-import Loader from "./utils/loader";
+import { createUrl } from '../../../services/url';
+import { validateUrl } from '../../../utils/url';
+import UrlHolderLayout from "./urlHolderLayout";
+import UrlInput from "./urlInput";
+import UrlButton from "./urlButton";
+import Loader from "../utils/loader";
 import { ClipboardCopyIcon } from '@heroicons/react/outline'
 import SafeRedirect from "./safeRedirect";
 
@@ -89,6 +89,12 @@ export default class UrlShortener extends Component {
         }, 2000)
     }
 
+    handleKeyPress = (e) => {
+        if (e.charCode == 13 && e.code == "Enter") {
+            this.createUrl();
+        }
+    }
+
     render() {
         const { url, shortUrl, copied, loading } = this.state;
 
@@ -98,6 +104,7 @@ export default class UrlShortener extends Component {
                     <UrlInput 
                         url={url}
                         onChange={this.handleUrlChange}
+                        onKeyPress={this.handleKeyPress}
                     />
 
                     { !shortUrl ? (

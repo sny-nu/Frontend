@@ -1,6 +1,6 @@
-import UrlHolderLayout from "../../urlHolder/urlHolderLayout";
-import UrlInput from "../../urlHolder/urlInput";
-import UrlButton from "../../urlHolder/urlButton";
+import UrlHolderLayout from "../../ui/url/urlHolderLayout";
+import UrlInput from "../../ui/url/urlInput";
+import UrlButton from "../../ui/url/urlButton";
 
 export default function Threat({ url, threats }) {
     return (
