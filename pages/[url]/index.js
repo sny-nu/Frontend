@@ -24,9 +24,10 @@ export default function UrlPage({ urlData, notFound }) {
     }
 }
 
-export async function getServerSideProps ({ query, res }) {
+export async function getServerSideProps ({ query, res, req }) {
+    const userAgent = req.headers['user-agent'];
     const urlHash = query.url;
-    const url = await getUrl(urlHash);
+    const url = await getUrl(urlHash, userAgent);
 
     // Send user to redirect if it has no threats and safe is turned off
     if (url != undefined) {
