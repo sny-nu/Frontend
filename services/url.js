@@ -31,9 +31,11 @@ export async function createUrl(url) {
     }
 }
 
-export async function getUrl(urlHash) {
+export async function getUrl(urlHash, userAgent) {
     try {
-        const response = await api.get(`/v1/url/${urlHash}`);
+        const response = await api.get(`/v1/url/${urlHash}`, {
+            headers: { 'User-Agent': userAgent }
+        });
 
         if (response.status >= 200 && response.status < 400) {
             return response.data;
