@@ -1,8 +1,7 @@
 import { LinkIcon, CursorClickIcon, BanIcon, ShareIcon } from '@heroicons/react/outline'
-import Card from "../../ui/card";
+import Card from "../../ui/card/card";
 import SectionTitle from "../../ui/text/sectionTitle";
-import Title from '../../ui/text/title';
-import NormalText from '../../ui/text/normalText';
+import IconCardContent from '../../ui/card/iconCardContent';
 
 export default function HowItWorks() {
     return (
@@ -12,40 +11,32 @@ export default function HowItWorks() {
             <div className="bg-gradient-to-br from-green-500 to-teal-500 p-8 mt-12 rounded-3xl transform rotate-2">
                 <div className="grid grid-flow-col lg:grid-cols-4 lg:grid-rows-none grid-rows-4 grid-cols-none md:grid-rows-2 md:grid-cols-2 gap-4 text-white">
                     <Card className="p-4 transform -rotate-2">
-                        <div className="flex flex-row">
-                            <LinkIcon className="w-10 h-10 mr-2" />
-                            <Title className="my-auto">Long Url</Title>
-                        </div>
-                        <NormalText className="p-2">
-                            Have a long url you want to share? Just copy it and put it in the input field.
-                        </NormalText>
+                        <IconCardContent
+                            icon={<LinkIcon className="w-10 h-10 mr-2" />}
+                            title="Long Url"
+                            description="Have a long url you want to share? Just copy it and put it in the input field."
+                        />
                     </Card>
                     <Card className="p-4 transform -rotate-2">
-                        <div className="flex flex-row">
-                            <CursorClickIcon className="w-10 h-10 mr-2" />
-                            <Title className="my-auto">Shorten</Title>
-                        </div>
-                        <NormalText className="p-2">
-                            To create a sny<span className="text-green-500">.</span>nu url, just click on shorten. A random generated hash will now be created to point to your url.
-                        </NormalText>
+                        <IconCardContent
+                            icon={<CursorClickIcon className="w-10 h-10 mr-2" />}
+                            title="Shorten"
+                            description={`To create a sny<span className="text-green-500">.</span>nu url, just click on shorten. A random generated hash will now be created to point to your url.`}
+                        />
                     </Card>
                     <Card className="p-4 transform -rotate-2">
-                        <div className="flex flex-row">
-                            <BanIcon className="w-10 h-10 mr-2" />
-                            <Title className="my-auto">Safety</Title>
-                        </div>
-                        <NormalText className="p-2">
-                            While your url is generated. We check the url on possible threats. Is your url unsafe, we show the visitor of the url the possible threats.
-                        </NormalText>
+                        <IconCardContent
+                            icon={<BanIcon className="w-10 h-10 mr-2" />}
+                            title="Safety"
+                            description="While your url is generated. We check the url on possible threats. Is your url unsafe, we show the visitor of the url the possible threats."
+                        />
                     </Card>
                     <Card className="p-4 transform -rotate-2">
-                        <div className="flex flex-row">
-                            <ShareIcon className="w-10 h-10 mr-2" />
-                            <Title className="my-auto">Share</Title>
-                        </div>
-                        <NormalText className="p-2">
-                            Now that your url is generated and checked. Just click on "Copy" and share your url.
-                        </NormalText>
+                        <IconCardContent
+                            icon={<ShareIcon className="w-10 h-10 mr-2" />}
+                            title="Share"
+                            description="Now that your url is generated and checked. Just click on 'Copy' and share your url."
+                        />
                     </Card>
                 </div>
             </div>
