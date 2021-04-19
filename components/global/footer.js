@@ -7,7 +7,6 @@ export default function Footer () {
             <div className="md:w-2/4 lg:w-2/5 flex text-center justify-between md:flex-row flex-col">
                 <Link href="/policies/terms"><a className="py-2 md:py-0">Terms of Services</a></Link>
                 <Link href="/policies/privacy"><a className="py-2 md:py-0">Privacy Policy</a></Link>
-                {/* <Link href="/contact"><a className="py-2 md:py-0">Contact</a></Link> */}
             </div>
         </div>
     )

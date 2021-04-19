@@ -3,6 +3,7 @@ import HistoryItem from "./historyItem";
 import cookie from 'react-cookies';
 import PageTitle from "../../ui/text/pageTitle";
 import BigText from "../../ui/text/bigText";
+import Container from "../../ui/container";
 
 export default function HistoryHeader() {
     const [history, setHistory] = useState([]);
@@ -15,7 +16,7 @@ export default function HistoryHeader() {
     }, []);
 
     return (
-        <div className="mx-auto container py-5 text-center sm:px-4 px-6">
+        <Container>
             <PageTitle>
                 Your sny<span className="text-green-500">.</span>nu history
             </PageTitle>
@@ -36,6 +37,6 @@ export default function HistoryHeader() {
                 </BigText>
             )
             }
-        </div>
+        </Container>
     )
 }
