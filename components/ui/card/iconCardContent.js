@@ -1,3 +1,6 @@
+import NormalText from "../text/normalText";
+import Title from "../text/title";
+
 export default function IconCardContent({ icon, title, description}) {
     return (
         <>

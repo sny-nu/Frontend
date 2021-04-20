@@ -21,7 +21,7 @@ export default function HowItWorks() {
                         <IconCardContent
                             icon={<CursorClickIcon className="w-10 h-10 mr-2" />}
                             title="Shorten"
-                            description={`To create a sny<span className="text-green-500">.</span>nu url, just click on shorten. A random generated hash will now be created to point to your url.`}
+                            description="To create a sny.nu url, just click on shorten. A random generated hash will now be created to point to your url."
                         />
                     </Card>
                     <Card className="p-4 transform -rotate-2">
