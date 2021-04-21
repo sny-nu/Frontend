@@ -3,7 +3,7 @@ import PageTitle from "../../ui/text/pageTitle";
 import Card from "../../ui/card/card";
 import CardContent from "../../ui/card/cardContent";
 
-export default function Analytics() {
+export default function Analytics({ stats }) {
     return (
         <Container>
             <PageTitle>Analytics</PageTitle>
@@ -11,42 +11,42 @@ export default function Analytics() {
                 <Card className="p-6">
                     <CardContent 
                         title="Clicks today"
-                        value="10"
+                        value={stats.clicksToday}
                         type="clicks"
                     />
                 </Card>
                 <Card className="p-6">
                     <CardContent 
                         title="Clicks this week"
-                        value="70"
+                        value={stats.clicksThisWeek}
                         type="clicks"
                     />
                 </Card>
                 <Card className="p-6">
                     <CardContent 
                         title="Clicks this month"
-                        value="310"
+                        value={stats.clicksThisMonth}
                         type="clicks"
                     />
                 </Card>
                 <Card className="p-6">
                     <CardContent 
                         title="Clicks this year"
-                        value="3650"
+                        value={stats.clicksThisYear}
                         type="clicks"
                     />
                 </Card>
                 <Card className="p-6">
                     <CardContent 
                         title="Average clicks"
-                        value="10"
+                        value={stats.averageClicksPerDay.toFixed(2)}
                         type="per day"
                     />
                 </Card>
                 <Card className="p-6">
                     <CardContent 
                         title="Most used browser"
-                        value="Firefox"
+                        value={stats.mostUsedBrowser}
                     />
                 </Card>
             </div>
