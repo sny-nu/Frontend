@@ -3,7 +3,8 @@ import UrlInput from "../../ui/url/urlInput";
 import UrlButton from "../../ui/url/urlButton";
 import { useState, useEffect } from "react";
 import BigText from "../../ui/text/bigText";
-import PageTitle from "../../ui/text/pageTitle"
+import H3 from "../../ui/text/h3";
+import H2 from "../../ui/text/h2";
 
 export default function Redirecter({ url }) {
     const [countDown, setCountDown] = useState(50);
@@ -26,11 +27,11 @@ export default function Redirecter({ url }) {
 
     return (
         <div className="mx-auto container py-20 md:py-48 text-center sm:px-4 px-6">
-            <PageTitle>Redirecting you in:</PageTitle>
-            <h1 className={"text-6xl font-black " + (redirectBlocked ? "text-red-500" : (countDown <= 20 ? "text-red-500" : "text-orange-500"))}>
+            <H3>Redirecting you in:</H3>
+            <H2 className={"font-black " + (redirectBlocked ? "text-red-500" : (countDown <= 20 ? "text-red-500" : "text-orange-500"))}>
                 { redirectBlocked ?  "Stopped" : (countDown == 0 ? "Redirecting" : (countDown / 10).toFixed(1)) }
-            </h1>
-            <BigText>
+            </H2>
+            <BigText className="max-w-lg mt-4 mx-auto text-gray-400">
                 If you don't want to be redirected to this URL please click on the red stop button below to stay on this page.
             </BigText>
 

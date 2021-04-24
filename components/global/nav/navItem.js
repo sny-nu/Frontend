@@ -1,6 +1,16 @@
 import Link from 'next/link';
 
-export default function NavItem({ children, path, onClick }) {
+export default function NavItem({ children, path, onClick, logo }) {
+    if (logo) {
+        return (
+            <Link href={path}>
+                <a onClick={onClick}
+                    className="">
+                    { children }
+                </a>
+            </Link>
+        )
+    }
     return (
         <Link href={path}>
             <a onClick={onClick}

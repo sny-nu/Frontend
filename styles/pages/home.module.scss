@@ -1,0 +1,30 @@
+.home {
+    @apply h-screen;
+    @apply mx-auto;
+    @apply w-full; 
+    @apply mb-8;
+    @apply antialiased; 
+    @apply relative;
+
+    @screen lg {
+        @apply px-6;
+    }
+
+    min-height: 500px;
+}
+
+.arrowDown {
+    @apply text-green-500; 
+    @apply w-8;
+    @apply h-8;
+    @apply mx-auto; 
+
+    @screen md {
+        @apply mt-16
+    }
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}

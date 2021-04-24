@@ -1,6 +1,6 @@
 export default function HugeText({ children, className }) {
     return (
-        <p className={"text-white text-5xl font-bold " + className}>
+        <p className={"text-xl " + className}>
             { children }
         </p>
     )
