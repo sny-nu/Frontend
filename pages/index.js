@@ -4,7 +4,7 @@ import Navbar from "../components/global/nav/navbar";
 import Footer from "../components/global/footer";
 import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
 
-import styles from "../styles/home.module.css";
+import styles from "../styles/pages/home.module.scss";
 
 export default function Home() {
     return (
