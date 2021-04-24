@@ -15,11 +15,11 @@
         }
 
         @screen lg {
-            mx-16
+            @apply mx-16;
         }
         
         @screen xl { 
-            mx-36 
+            @apply mx-36;
         }
     }
 
