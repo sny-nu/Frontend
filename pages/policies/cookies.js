@@ -7,8 +7,8 @@ export default function Cookies() {
             <Head>
                 <title>Cookie Policy | sny.nu</title>
             </Head>
-            <div className="lg:container mx-auto bg-gray-900 w-full lg:px-12 antialiased max-w-xl px-6 text-white">
-                <h1 className="text-3xl text-white font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
+            <div className="lg:container mx-auto  w-full lg:px-12 antialiased max-w-xl px-6 ">
+                <h1 className="text-3xl  font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
                     Cookie Policy sny<span className="text-green-500">.</span>nu
                 </h1>
                 <p>This cookie policy (&quot;Policy&quot;) describes what cookies are and how and they&#039;re being used by the 
@@ -21,7 +21,7 @@ export default function Cookies() {
                     <a target="_blank" rel="nofollow" href="https://sny.nu/policies/privacy">privacy policy</a>. This cookie policy was created with 
                     the help of the <a target="_blank" href="https://www.websitepolicies.com/cookie-policy-generator">cookie policy generator</a>.</p>
                 
-                <h2 className="text-2xl text-white font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     What are cookies?
                 </h2>
                 <p>Cookies are small pieces of data stored in text files that are saved on your computer or other devices when websites are loaded in a browser. 
@@ -36,7 +36,7 @@ export default function Cookies() {
                     visit our website and also when you visit certain other websites. You may learn more about cookies and how they work in this 
                     <a target="_blank" href="https://www.websitepolicies.com/blog/cookies">guide</a>.</p>
                 
-                <h2 className="text-2xl text-white font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     What type of cookies do we use?
                 </h2>
                 <h3>Functionality cookies</h3>
@@ -47,7 +47,7 @@ export default function Cookies() {
                     These cookies do not contain personal information such as names and email addresses and are used to help us improve your user experience 
                     of the Website.</p>
                 
-                <h2 className="text-2xl text-white font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     What are your cookie options?
                 </h2>
                 <p>If you don't like the idea of cookies or certain types of cookies, you can change your browser's settings to delete cookies 
@@ -56,21 +56,21 @@ export default function Cookies() {
                 <p>Please note, however, that if you delete cookies or do not accept them, you might not be able to use all of the features 
                     the Website and Services offer.</p>
                 
-                <h2 className="text-2xl text-white font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Changes and amendments
                 </h2>
                 <p>We reserve the right to modify this Policy or its terms relating to the Website and Services at any time, effective upon 
                     posting of an updated version of this Policy on the Website. When we do, we will revise the updated date at the bottom of this page. 
                     Continued use of the Website and Services after any such changes shall constitute your consent to such changes.</p>
                 
-                <h2 className="text-2xl text-white font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Acceptance of this policy
                 </h2>
                 <p>You acknowledge that you have read this Policy and agree to all its terms and conditions. By accessing and using the Website and Services 
                     you agree to be bound by this Policy. If you do not agree to abide by the terms of this Policy, you are not authorized to access or use 
                     the Website and Services.</p>
                 
-                <h2 className="text-2xl text-white font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Contacting us
                 </h2>
                 <p>If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to our use 

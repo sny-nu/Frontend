@@ -9,7 +9,7 @@ export default function HowItWorks() {
             <SectionTitle>How it works</SectionTitle>
             <div className="bg-gray-800 w-full flex-none rounded-3xl">
             <div className="bg-gradient-to-br from-green-500 to-teal-500 p-8 mt-12 rounded-3xl transform rotate-2">
-                <div className="grid grid-flow-col lg:grid-cols-4 lg:grid-rows-none grid-rows-4 grid-cols-none md:grid-rows-2 md:grid-cols-2 gap-4 text-white">
+                <div className="grid grid-flow-col lg:grid-cols-4 lg:grid-rows-none grid-rows-4 grid-cols-none md:grid-rows-2 md:grid-cols-2 gap-4 ">
                     <Card className="p-4 transform -rotate-2">
                         <IconCardContent
                             icon={<LinkIcon className="w-10 h-10 mr-2" />}

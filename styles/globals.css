@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    @apply bg-gray-900;
+    @apply text-white;
+}
+
 .Toastify__toast {
     @apply rounded-full;
     @apply p-4;
@@ -23,7 +28,6 @@
     @apply px-3;
     @apply py-2;
     @apply text-sm;
-    @apply text-white;
     @apply bg-red-500;
 }
 

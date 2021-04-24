@@ -3,10 +3,10 @@ import Navbar from "../components/global/nav/navbar";
 
 export default function Layout({ children }) {
     return (
-        <div className="bg-gray-900">
+        <div className="">
             <div className="min-h-screen h-full">
                 <Navbar />
-                <main className="lg:container mx-auto bg-gray-900 w-full lg:px-6 antialiased">
+                <main className="lg:container mx-auto  w-full lg:px-6 antialiased">
                     { children }
                 </main>
             </div>

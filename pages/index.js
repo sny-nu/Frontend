@@ -6,7 +6,7 @@ import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
 
 export default function Home() {
     return (
-        <div className="bg-gray-900">
+        <div className="">
             <div className="min-h-screen h-full mx-auto w-full lg:px-6 mb-8 antialiased">
                 <Navbar />
                 <HomeIntro />
