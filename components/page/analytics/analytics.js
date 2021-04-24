@@ -39,7 +39,7 @@ export default function Analytics({ stats }) {
                 <Card className="p-6">
                     <CardContent 
                         title="Average clicks"
-                        value={stats.averageClicksPerDay.toFixed(2)}
+                        value={stats.averageClicksPerDay}
                         type="per day"
                     />
                 </Card>
