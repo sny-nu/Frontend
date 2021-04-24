@@ -4,7 +4,7 @@ import H3 from '../../components/ui/text/h3';
 import H4 from '../../components/ui/text/h4';
 import H6 from '../../components/ui/text/h6';
 import NormalText from '../../components/ui/text/normalText';
-
+import Container from '../../components/ui/container';
 
 
 export default function Cookies() {
@@ -13,7 +13,7 @@ export default function Cookies() {
             <Head>
                 <title>Cookie Policy | sny.nu</title>
             </Head>
-            <div className="lg:container mx-auto w-full lg:px-12 antialiased max-w-xl px-6 ">
+            <Container>
                 <H3 className="mb-4">
                     Cookie Policy sny<span className="text-green-500">.</span>nu
                 </H3>
@@ -83,7 +83,7 @@ export default function Cookies() {
                     of cookies, you may do so via the <a target="_blank" rel="nofollow" href="http://info@sny.nu">contact form</a>.</NormalText>
                 
                 <NormalText>This document was last updated on March 10, 2021</NormalText>
-            </div>
+            </Container>
         </Layout>
     )
 }

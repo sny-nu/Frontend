@@ -1,0 +1,51 @@
+.howItWorks {
+    @apply text-center;
+
+    &__background {
+        @apply bg-gray-800;
+        @apply w-full; 
+        @apply flex-none; 
+        @apply rounded-3xl;
+    }
+
+    &__gradient {
+        @apply bg-gradient-to-br; 
+        @apply from-green-500; 
+        @apply to-teal-500;
+        @apply p-8; 
+        @apply mt-12; 
+        @apply rounded-3xl; 
+        @apply transform;
+        @apply rotate-2;
+    }
+
+    &__grid {
+        @apply grid;
+        @apply grid-flow-col;
+        @apply gap-4;
+        @apply grid-cols-none;
+        @apply grid-rows-4;
+
+        @screen md {
+            @apply grid-cols-2;
+            @apply grid-rows-2;
+        }
+
+        @screen lg {
+            @apply grid-cols-4;
+            @apply grid-rows-none;
+        }
+    }
+
+    &__card {
+        @apply p-4;
+        @apply transform;
+        @apply -rotate-2;
+
+        &__icon {
+            @apply w-10;
+            @apply h-10;
+            @apply mr-2;
+        }
+    }
+}

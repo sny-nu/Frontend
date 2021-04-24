@@ -4,6 +4,7 @@ import H3 from '../../components/ui/text/h3';
 import H4 from '../../components/ui/text/h4';
 import H6 from '../../components/ui/text/h6';
 import NormalText from '../../components/ui/text/normalText';
+import Container from '../../components/ui/container';
 
 export default function Terms() {
     return(
@@ -11,7 +12,7 @@ export default function Terms() {
             <Head>
                 <title>Terms of Services | sny.nu</title>
             </Head>
-            <div className="lg:container mx-auto w-full lg:px-12 antialiased max-w-xl px-6 ">
+            <Container>
                 <H3 className="mb-4">
                     Terms of Services sny<span className="text-green-500">.</span>nu
                 </H3>
@@ -128,7 +129,7 @@ export default function Terms() {
                 <NormalText className="mb-4">If you would like to contact us to understand more about this Agreement or wish to contact us concerning any matter relating to it, 
                     you may send an email to &#105;n&#102;&#111;&#64;sny&#46;n&#117;.</NormalText>
                 <NormalText>This document was last updated on March 8, 2021</NormalText>
-            </div>
+            </Container>
         </Layout>
     )
 }

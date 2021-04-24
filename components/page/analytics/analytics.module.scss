@@ -1,0 +1,29 @@
+.analytics {
+    &__grid {
+        @apply mt-8;
+        @apply grid;
+        @apply grid-cols-1;
+        @apply gap-4;
+        @apply text-left;
+
+        @screen sm {
+            @apply grid-cols-2;
+        }
+        
+        @screen md {
+            @apply grid-cols-3;
+        }
+
+        @screen lg {
+            mx-16
+        }
+        
+        @screen xl { 
+            mx-36 
+        }
+    }
+
+    &__card {
+        @apply p-6;
+    }
+}

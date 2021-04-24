@@ -1,0 +1,78 @@
+.header {
+    @apply text-center;
+
+    &__grid {
+        @apply gap-4;
+        @apply m-4; 
+        @apply w-full;
+        @apply mx-auto;
+        @apply mt-6;
+
+        @screen md {
+            @apply grid;
+            @apply grid-cols-2;
+        }
+
+        @screen lg {
+            @apply w-full;
+
+        }
+
+        @screen xl {
+            @apply w-8/12;
+        }
+
+    }
+}
+
+.historyItem {
+    @apply bg-gray-700; 
+    @apply rounded-full; 
+    @apply my-4;
+    @apply flex;
+    @apply flex-row;
+
+    @screen md {
+        @apply my-0 
+    }
+
+    &__urls {
+        @apply text-left; 
+        @apply truncate; 
+        @apply w-11/12; 
+        @apply py-4;
+        @apply px-6;
+    }
+
+    &__button {
+        @apply rounded-full;
+        @apply w-16;
+        @apply h-14;
+        @apply m-2;
+        @apply bg-green-500;
+        @apply focus:outline-none;
+        @apply hover:bg-green-400;
+        @apply transition;
+        @apply ease-in-out;
+        @apply duration-300;
+        @apply hover:text-gray-700;
+
+        &__icon {
+            @apply w-6;
+            @apply h-6;
+            @apply mx-auto; 
+            @apply text-gray-900;
+        }
+    }
+
+    &__copied {
+        @apply rounded-full;
+        @apply h-14;
+        @apply m-2;
+        @apply w-full;
+        @apply bg-green-500;
+        @apply flex;
+        @apply items-center;
+        @apply justify-center;
+    }
+}
