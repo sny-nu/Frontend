@@ -5,7 +5,7 @@ import UrlShortener from "../../ui/url/urlShortener";
 export default function HomeIntro() {
     return (
         <div className="mx-auto container py-16 md:pt-48 text-center sm:px-4 px-6">
-            <H1 className="text-1xl">
+            <H1>
                 Shorten your <span className="text-green-500">URLs</span> now <br />
                 for <span className="text-green-500">easily</span> sharing.
             </H1>
