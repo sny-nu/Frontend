@@ -1,12 +1,12 @@
 import Container from "../../ui/container";
-import PageTitle from "../../ui/text/pageTitle";
 import Card from "../../ui/card/card";
 import CardContent from "../../ui/card/cardContent";
+import H3 from "../../ui/text/h3";
 
 export default function Analytics({ stats }) {
     return (
         <Container>
-            <PageTitle>Analytics</PageTitle>
+            <H3>Analytics</H3>
             <div className="xl2:mx-48 xl:mx-36 lg:mx-16 mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 text-left">
                 <Card className="p-6">
                     <CardContent 

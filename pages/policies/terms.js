@@ -7,8 +7,8 @@ export default function Terms() {
             <Head>
                 <title>Terms of Services | sny.nu</title>
             </Head>
-            <div className="lg:container mx-auto  w-full lg:px-12 antialiased max-w-xl px-6 ">
-                <h1 className="text-3xl  font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
+            <div className="lg:container mx-auto w-full lg:px-12 antialiased max-w-xl px-6 ">
+                <h1 className="text-3xl font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
                     Terms of Services sny<span className="text-green-500">.</span>nu
                 </h1>
                 <p>These terms and conditions (&quot;Agreement&quot;) set forth the general terms and conditions of your use of 
@@ -24,13 +24,13 @@ export default function Terms() {
                     signed by you, and it governs your use of the Website and Services. This terms and conditions policy was created with the help 
                     of the <a target="_blank" href="https://www.websitepolicies.com/terms-and-conditions-generator">terms and conditions generator</a>.</p>
 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Age requirement
                 </h2>
                 <p>You must be at least 13 years of age to use the Website and Services. By using the Website and Services and by agreeing to this 
                     Agreement you warrant and represent that you are at least 13 years of age.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Links to other resources
                 </h2>
                 <p>Although the Website and Services may link to other resources (such as websites, mobile applications, etc.), we are not, 
@@ -41,7 +41,7 @@ export default function Terms() {
                     of use of any resource which you access through a link on the Website and Services. Your linking to any other off-site resources 
                     is at your own risk.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Prohibited uses
                 </h2>
                 <p>In addition to other terms as set forth in the Agreement, you are prohibited from using the Website and Services or Content: 
@@ -59,7 +59,7 @@ export default function Terms() {
                     (j) to interfere with or circumvent the security features of the Website and Services, third party products and services, 
                     or the Internet. We reserve the right to terminate your use of the Website and Services for violating any of the prohibited uses.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Limitation of liability
                 </h2>
                 <p>To the fullest extent permitted by applicable law, in no event will the Operator, its affiliates, directors, officers, 
@@ -74,7 +74,7 @@ export default function Terms() {
                     occurrence giving rise to such liability. The limitations and exclusions also apply if this remedy does not fully 
                     compensate you for any losses or fails of its essential purpose.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Indemnification
                 </h2>
                 <p>You agree to indemnify and hold the Operator and its affiliates, directors, officers, employees, agents, suppliers and 
@@ -83,7 +83,7 @@ export default function Terms() {
                     against any of them as a result of or relating to your Content, your use of the Website and Services or any willful 
                     misconduct on your part.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Severability
                 </h2>
                 <p>All rights and restrictions contained in this Agreement may be exercised and shall be applicable and binding only to 
@@ -93,7 +93,7 @@ export default function Terms() {
                     intention of the parties that the remaining provisions or portions thereof shall constitute their agreement with respect 
                     to the subject matter hereof, and all such remaining provisions or portions thereof shall remain in full force and effect.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Dispute resolution
                 </h2>
                 <p>The formation, interpretation, and performance of this Agreement and any disputes arising out of it shall be governed by 
@@ -103,7 +103,7 @@ export default function Terms() {
                     You hereby waive any right to a jury trial in any proceeding arising out of or related to this Agreement. 
                     The United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Changes and amendments
                 </h2>
                 <p>We reserve the right to modify this Agreement or its terms relating to the Website and Services at any time, 
@@ -111,14 +111,14 @@ export default function Terms() {
                     date at the bottom of this page. Continued use of the Website and Services after any such changes shall constitute your 
                     consent to such changes.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Acceptance of these terms
                 </h2>
                 <p>You acknowledge that you have read this Agreement and agree to all its terms and conditions. By accessing and using the 
                     Website and Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, 
                     you are not authorized to access or use the Website and Services.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Contacting us
                 </h2>
                 <p className="mb-4">If you would like to contact us to understand more about this Agreement or wish to contact us concerning any matter relating to it, 

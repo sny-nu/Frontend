@@ -7,8 +7,8 @@ export default function Privacy() {
             <Head>
                 <title>Privacy Policy | sny.nu</title>
             </Head>
-            <div className="lg:container mx-auto  w-full lg:px-12 antialiased max-w-xl px-6 ">
-                <h1 className="text-3xl  font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
+            <div className="lg:container mx-auto w-full lg:px-12 antialiased max-w-xl px-6 ">
+                <h1 className="text-3xl font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
                     Privacy Policy sny<span className="text-green-500">.</span>nu
                 </h1>
                 <p> This privacy policy ("Policy") describes how the personally identifiable information ("Personal Information") you may provide on 
@@ -22,7 +22,7 @@ export default function Privacy() {
                     
                     This privacy policy was created with the help of the <a target="_blank" href="https://www.websitepolicies.com/privacy-policy-generator">privacy policy generator</a>.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Automatic collection of information
                 </h2>
                 <p className="mb-2">When you open the Website, our servers automatically record information that your browser sends. 
@@ -42,7 +42,7 @@ export default function Privacy() {
                     to their documentation</a> to find out what Ackee collects.
                 </p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Collection of personal information
                 </h2>
                 <p>You can access and use the Website and Services without telling us who you are or revealing any information by which 
@@ -58,7 +58,7 @@ export default function Privacy() {
                     about you from other sources such as public databases and our joint marketing partners. You can choose not to provide us with your 
                     Personal Information, but then you may not be able to take advantage of some of the features on the Website. 
                     Users who are uncertain about what information is mandatory are welcome to contact us.</p>
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Use and processing of collected information
                 </h2>
                 <p>In order to make the Website and Services available to you, or to meet a legal obligation, 
@@ -86,7 +86,7 @@ export default function Privacy() {
                 <p>In the event we go through a business transition, such as a merger or acquisition by another company, or sale of all or a portion of its assets, 
                     your user account, and Personal Information will likely be among the assets transferred.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Disclosure of information
                 </h2>
                 <p className="mb-2"> Depending on the requested Services or as necessary to complete any transaction or provide any service you have requested, 
@@ -102,7 +102,7 @@ export default function Privacy() {
                     such as to comply with a subpoena, or similar legal process, and when we believe in good faith that disclosure 
                     is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Retention of information
                 </h2>
                 <p>We will retain and use your Personal Information for the period necessary to comply with our legal obligations, 
@@ -112,7 +112,7 @@ export default function Privacy() {
                     Therefore, the right to access, the right to erasure, the right to rectification and the right to data 
                     portability cannot be enforced after the expiration of the retention period.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Transfer of information
                 </h2>
                 <p>Depending on your location, data transfers may involve transferring and storing your information in a country other than your own. 
@@ -121,7 +121,7 @@ export default function Privacy() {
                     such as the UN, and about the security measures taken by us to safeguard your information. If any such transfer takes place, 
                     you can find out more by checking the relevant sections of this Policy or inquire with us using the information provided in the contact section.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     The rights of users
                 </h2>
                 <p>You may exercise certain rights regarding your information processed by us. In particular, you have the right to do the following: 
@@ -137,14 +137,14 @@ export default function Privacy() {
                     This provision is applicable provided that your information is processed by automated means and that the processing is based on your consent, 
                     on a contract which you are part of or on pre-contractual obligations thereof.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     The right to object to processing
                 </h2>
                 <p>Where Personal Information is processed for the public interest, in the exercise of an official authority vested in us or for the purposes of 
                     the legitimate interests pursued by us, you may object to such processing by providing a ground related to your particular situation to justify 
                     the objection.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Data protection rights under GDPR
                 </h2>
                 <p>If you are a resident of the European Economic Area (EEA), you have certain data protection rights and the Operator aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Information. If you wish to be informed what Personal Information we hold about you and if you want it to be removed from our systems, please contact us. In certain circumstances, you have the following data protection rights:</p>
@@ -160,7 +160,7 @@ export default function Privacy() {
                 <p>You have the right to complain to a Data Protection Authority about our collection and use of your Personal Information. 
                     For more information, please contact your local data protection authority in the European Economic Area (EEA).</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     California privacy rights
                 </h2>
                 <p>In addition to the rights as explained in this Policy, California residents who provide Personal Information 
@@ -171,7 +171,7 @@ export default function Privacy() {
                     information for the immediately prior calendar year (e.g., requests made in the current year will receive information about the prior year). 
                     To obtain this information please contact us.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     How to exercise these rights
                 </h2>
                 <p>Any requests to exercise your rights can be directed to the Operator through the contact details provided in this document. 
@@ -181,7 +181,7 @@ export default function Privacy() {
                     properly understand the request and respond to it. We cannot respond to your request or provide you with 
                     Personal Information unless we first verify your identity or authority to make such a request and confirm that the Personal Information relates to you.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Privacy of children
                 </h2>
                 <p>We do not knowingly collect any Personal Information from children under the age of 13. If you are under the age of 13, 
@@ -192,7 +192,7 @@ export default function Privacy() {
                     You must also be at least 16 years of age to consent to the processing of your Personal Information in your country 
                     (in some countries we may allow your parent or guardian to do so on your behalf).</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Cookies
                 </h2>
                 <p className="mb-2">The Website and Services use &quot;cookies&quot; to help personalize your online experience. 
@@ -205,7 +205,7 @@ export default function Privacy() {
                     you may not be able to fully experience the features of the Website and Services.You may learn more about 
                     cookies and how they work in this <a target="_blank" href="https://www.websitepolicies.com/blog/cookies">guide</a>.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Do Not Track signals
                 </h2>
                 <p>Some browsers incorporate a Do Not Track feature that signals to websites you visit that you do not want to have your online activity tracked. 
@@ -216,7 +216,7 @@ export default function Privacy() {
                     Do Not Track signals communicated by your browser. Even so, as described in more detail throughout this Policy, 
                     we limit our use and collection of your personal information.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Links to other resources
                 </h2>
                 <p>The Website and Services contain links to other resources that are not owned or controlled by us. 
@@ -224,7 +224,7 @@ export default function Privacy() {
                     We encourage you to be aware when you leave the Website and Services and to read the privacy statements 
                     of each and every resource that may collect Personal Information.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Information security
                 </h2>
                 <p>We secure information you provide on computer servers in a controlled, secure environment, protected from unauthorized access, use, or disclosure. 
@@ -235,7 +235,7 @@ export default function Privacy() {
                     exchanged between you and the Website and Services cannot be guaranteed; and (iii) any such information and data may be viewed or 
                     tampered with in transit by a third party, despite best efforts.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Data breach
                 </h2>
                 <p>In the event we become aware that the security of the Website and Services has been compromised or users Personal Information has been disclosed 
@@ -245,7 +245,7 @@ export default function Privacy() {
                     individuals if we believe that there is a reasonable risk of harm to the user as a result of the breach or if notice is otherwise required by law. 
                     When we do, we will post a notice on the Website.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Changes and amendments
                 </h2>
                 <p>We reserve the right to modify this Policy or its terms relating to the Website and Services from time to time in our 
@@ -257,14 +257,14 @@ export default function Privacy() {
                     However, we will not, without your consent, use your Personal Information in a manner materially different than what was stated at 
                     the time your Personal Information was collected.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Acceptance of this policy
                 </h2>
                 <p>You acknowledge that you have read this Policy and agree to all its terms and conditions. 
                     By accessing and using the Website and Services you agree to be bound by this Policy. 
                     If you do not agree to abide by the terms of this Policy, you are not authorized to access or use the Website and Services.</p>
                 
-                <h2 className="text-2xl  font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
+                <h2 className="text-2xl font-extrabold leading-10 sm:text-2xl sm:leading-none md:text-2xl xl:text-3xl my-4">
                     Contacting us
                 </h2>
                 <p className="mb-4">If you would like to contact us to understand more about this Policy or wish to contact us concerning any 
