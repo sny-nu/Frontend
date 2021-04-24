@@ -14,6 +14,7 @@ export default function Navbar() {
                     <NavItem 
                         path="/"
                         onClick={() => setOpen(isOpen => false)}
+                        logo={true}
                     >
                         <Logo className="w-12 h-12 mr-4 cursor-pointer" />
                     </NavItem>
