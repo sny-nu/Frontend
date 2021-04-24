@@ -1,10 +1,12 @@
 import BigText from "../../ui/text/bigText";
 import H1 from "../../ui/text/h1";
 import UrlShortener from "../../ui/url/urlShortener";
+import Container from "../../ui/container";
+
 
 export default function HomeIntro() {
     return (
-        <div className="mx-auto container py-16 md:pt-48 text-center sm:px-4 px-6">
+        <Container className="center">
             <H1>
                 Shorten your <span className="text-green-500">URLs</span> now <br />
                 for <span className="text-green-500">easily</span> sharing.
@@ -15,6 +17,6 @@ export default function HomeIntro() {
             </BigText>
             
             <UrlShortener />
-        </div>
+        </Container>
     )
 }
