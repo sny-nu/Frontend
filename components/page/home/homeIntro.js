@@ -16,7 +16,6 @@ export default function HomeIntro() {
             </BigText>
             
             <UrlShortener />
-
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Footer from '../../components/global/footer';
-import Navbar from '../../components/global/navbar';
+import Navbar from '../../components/global/nav/navbar';
 import Head from 'next/head';
 
 export default function Error404() {

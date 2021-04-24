@@ -1,6 +1,6 @@
 import HomeIntro from "../components/page/home/homeIntro";
 import HowItWorks from "../components/page/home/howItWorks";
-import Navbar from "../components/global/navbar";
+import Navbar from "../components/global/nav/navbar";
 import Footer from "../components/global/footer";
 import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
 

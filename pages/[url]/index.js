@@ -8,20 +8,20 @@ import Head from 'next/head';
 export default function UrlPage({ urlData, notFound }) {
     if (notFound) {
         return <Error404 />
-    } else {
-        return (
-            <Layout>
-                <Head>
-                    <title>Short Url | sny.nu</title>
-                </Head>
-                { urlData.hasThreats == 1 ? (
-                    <Threat url={urlData.originalUrl} threats={urlData.threats} />
-                ) : (
-                    <Redirecter url={urlData.originalUrl} />
-                )}
-            </Layout>
-        )
     }
+
+    return (
+        <Layout>
+            <Head>
+                <title>Short Url | sny.nu</title>
+            </Head>
+            { urlData.hasThreats == 1 ? (
+                <Threat url={urlData.originalUrl} threats={urlData.threats} />
+            ) : (
+                <Redirecter url={urlData.originalUrl} />
+            )}
+        </Layout>
+    )
 }
 
 export async function getServerSideProps ({ query, res, req }) {
