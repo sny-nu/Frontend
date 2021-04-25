@@ -1,9 +1,12 @@
-import DefaultLayout from "../../layouts/default";
 import { getUrl } from "../../services/url";
 import Redirecter from "../../components/page/url/redirecter";
 import Threat from "../../components/page/url/threat";
 import Error404 from "../error/404";
 import Head from 'next/head';
+import EmptyLayout from "../../layouts/empty";
+import Navbar from "../../components/global/nav/navbar";
+
+import styles from "../../styles/page.module.scss";
 
 export default function UrlPage({ urlData, notFound }) {
     if (notFound) {
@@ -11,16 +14,19 @@ export default function UrlPage({ urlData, notFound }) {
     }
 
     return (
-        <DefaultLayout>
+        <EmptyLayout>
             <Head>
                 <title>Short Url | sny.nu</title>
             </Head>
-            { urlData.hasThreats == 1 ? (
-                <Threat url={urlData.originalUrl} threats={urlData.threats} />
-            ) : (
-                <Redirecter url={urlData.originalUrl} />
-            )}
-        </DefaultLayout>
+            <div className={styles.fullScreen}>
+                <Navbar />
+                { urlData.hasThreats == 1 ? (
+                    <Threat url={urlData.originalUrl} threats={urlData.threats} />
+                ) : (
+                    <Redirecter url={urlData.originalUrl} />
+                )}
+            </div>
+        </EmptyLayout>
     )
 }
 

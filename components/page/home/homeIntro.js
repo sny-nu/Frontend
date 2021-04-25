@@ -3,7 +3,6 @@ import H1 from "../../ui/text/h1";
 import UrlShortener from "../../ui/url/urlShortener";
 import Container from "../../ui/container";
 
-
 export default function HomeIntro() {
     return (
         <Container className="center">
