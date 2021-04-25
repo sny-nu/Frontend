@@ -1,8 +1,10 @@
+import styles from "./utils.module.scss";
+
 export default function Loader() {
     return (
-        <div className='flex flex-row justify-center'>
-            <span className='loading h-full mr-2'></span>
-            <p className="text">Loading</p>
+        <div className={styles.loader}>
+            <span></span>
+            <p>Loading</p>
         </div>
     )
 }
