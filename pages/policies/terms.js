@@ -1,14 +1,13 @@
-import Layout from '../../layouts/default';
+import DefaultLayout from '../../layouts/default';
 import Head from 'next/head';
 import H3 from '../../components/ui/text/h3';
 import H4 from '../../components/ui/text/h4';
-import H6 from '../../components/ui/text/h6';
 import NormalText from '../../components/ui/text/normalText';
 import Container from '../../components/ui/container';
 
 export default function Terms() {
     return(
-        <Layout>
+        <DefaultLayout>
             <Head>
                 <title>Terms of Services | sny.nu</title>
             </Head>
@@ -130,6 +129,6 @@ export default function Terms() {
                     you may send an email to &#105;n&#102;&#111;&#64;sny&#46;n&#117;.</NormalText>
                 <NormalText>This document was last updated on March 8, 2021</NormalText>
             </Container>
-        </Layout>
+        </DefaultLayout>
     )
 }

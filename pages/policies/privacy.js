@@ -1,4 +1,4 @@
-import Layout from '../../layouts/default';
+import DefaultLayout from '../../layouts/default';
 import Head from 'next/head';
 import H3 from '../../components/ui/text/h3';
 import H4 from '../../components/ui/text/h4';
@@ -7,7 +7,7 @@ import Container from '../../components/ui/container';
 
 export default function Privacy() {
     return(
-        <Layout>
+        <DefaultLayout>
             <Head>
                 <title>Privacy Policy | sny.nu</title>
             </Head>
@@ -274,6 +274,6 @@ export default function Privacy() {
                     matter relating to individual rights and your Personal Information, you may send an email to &#105;&#110;fo&#64;&#115;&#110;&#121;.n&#117;.</NormalText>
                 <NormalText>This document was last updated on March 10, 2021</NormalText>
             </Container>
-        </Layout>
+        </DefaultLayout>
     )
 }

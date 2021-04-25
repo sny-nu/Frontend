@@ -1,4 +1,4 @@
-import Layout from "../../layouts/default";
+import DefaultLayout from "../../layouts/default";
 import { getUrl } from "../../services/url";
 import Redirecter from "../../components/page/url/redirecter";
 import Threat from "../../components/page/url/threat";
@@ -11,7 +11,7 @@ export default function UrlPage({ urlData, notFound }) {
     }
 
     return (
-        <Layout>
+        <DefaultLayout>
             <Head>
                 <title>Short Url | sny.nu</title>
             </Head>
@@ -20,7 +20,7 @@ export default function UrlPage({ urlData, notFound }) {
             ) : (
                 <Redirecter url={urlData.originalUrl} />
             )}
-        </Layout>
+        </DefaultLayout>
     )
 }
 

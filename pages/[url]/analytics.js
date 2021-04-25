@@ -1,5 +1,5 @@
 import Analytics from "../../components/page/analytics/analytics";
-import Layout from "../../layouts/default";
+import DefaultLayout from "../../layouts/default";
 import { getStats } from "../../services/analytics";
 import Error404 from "../error/404";
 
@@ -9,9 +9,9 @@ export default function AnalyticsPage({ stats, notFound }) {
     }
     
     return (
-        <Layout>
+        <DefaultLayout>
             <Analytics stats={stats} />
-        </Layout>
+        </DefaultLayout>
     )
 }
 
