@@ -1,16 +1,14 @@
 import Footer from "../components/global/footer";
 import Navbar from "../components/global/nav/navbar";
 
-export default function Layout({ children }) {
+export default function DefaultLayout({ children }) {
     return (
-        <div className="">
-            <div className="min-h-screen h-full">
+        <>
+            <div className="min-h-screen h-full relative">
                 <Navbar />
-                <main className="lg:container mx-auto  w-full lg:px-6 antialiased">
-                    { children }
-                </main>
+                { children }
             </div>
             <Footer />
-        </div>
+        </>
     )
 }

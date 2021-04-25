@@ -1,0 +1,20 @@
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @apply text-center;
+
+    &__container {
+        min-height: 350px;
+    }
+
+    &__text {
+        @apply max-w-lg;
+        @apply mt-4;
+        @apply mx-auto;
+        @apply text-gray-400
+    }
+}
+
