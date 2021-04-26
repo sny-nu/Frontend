@@ -39,30 +39,42 @@
     &__urls {
         @apply text-left; 
         @apply truncate; 
-        @apply w-11/12; 
+        @apply w-10/12; 
         @apply py-4;
         @apply px-6;
     }
 
-    &__button {
+    button {
         @apply rounded-full;
         @apply w-16;
         @apply h-14;
-        @apply m-2;
-        @apply bg-green-500;
+        
         @apply focus:outline-none;
-        @apply hover:bg-green-400;
         @apply transition;
         @apply ease-in-out;
         @apply duration-300;
         @apply hover:text-gray-700;
+    }
 
-        &__icon {
-            @apply w-6;
-            @apply h-6;
-            @apply mx-auto; 
-            @apply text-gray-900;
-        }
+    &__icon {
+        @apply w-6;
+        @apply h-6;
+        @apply mx-auto; 
+        @apply text-gray-900;
+    }
+
+    &__stats {
+        @apply m-2;
+        @apply mr-0.5;
+        @apply bg-blue-500;
+        @apply hover:bg-blue-400;
+    }
+
+    &__copy {
+        @apply m-2;
+        @apply ml-1;
+        @apply bg-green-500;
+        @apply hover:bg-green-400;
     }
 
     &__copied {

@@ -29,3 +29,13 @@
         @apply p-6;
     }
 }
+
+.noAnalytics {
+    text-align: center;
+
+    p {
+        @apply max-w-lg;
+        @apply my-6;
+        @apply mx-auto;
+    }
+}

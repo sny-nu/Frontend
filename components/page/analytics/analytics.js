@@ -5,10 +5,10 @@ import H3 from "../../ui/text/h3";
 
 import styles from "./analytics.module.scss";
 
-export default function Analytics({ stats }) {
+export default function Analytics({ stats, hideTitle }) {
     return (
         <Container className={styles.analytics}>
-            <H3>Analytics</H3>
+            { hideTitle ? <></> : <H3>Analytics</H3>}
             <div className={styles.analytics__grid}>
                 <Card className={styles.analytics__card}>
                     <AnalyticsCardContent 
