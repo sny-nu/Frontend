@@ -1,16 +1,15 @@
 import Analytics from "../../components/page/analytics/analytics";
+import NoAnalytics from "../../components/page/analytics/noAnalytics";
 import DefaultLayout from "../../layouts/default";
 import { getStats } from "../../services/analytics";
-import Error404 from "../error/404";
 
-export default function AnalyticsPage({ stats, notFound }) {
-    if (notFound) {
-        return <Error404 />
-    }
-    
+export default function AnalyticsPage({ stats, notFound }) {    
     return (
         <DefaultLayout>
-            <Analytics stats={stats} />
+            { notFound 
+                    ? <NoAnalytics />
+                    : <Analytics stats={stats} />
+            }
         </DefaultLayout>
     )
 }
