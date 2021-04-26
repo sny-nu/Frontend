@@ -1,16 +1,16 @@
 import { getUrl } from "../../services/url";
 import Redirecter from "../../components/page/url/redirecter";
 import Threat from "../../components/page/url/threat";
-import Error404 from "../error/404";
+import ErrorPage from '../_error';
 import Head from 'next/head';
 import EmptyLayout from "../../layouts/empty";
 import Navbar from "../../components/global/nav/navbar";
 
 import styles from "../../styles/page.module.scss";
 
-export default function UrlPage({ urlData, notFound }) {
+export default function UrlPage({ urlData, notFound, statusCode }) {
     if (notFound) {
-        return <Error404 />
+        return <ErrorPage statusCode={statusCode} />
     }
 
     return (
@@ -47,7 +47,8 @@ export async function getServerSideProps ({ query, res, req }) {
     if (url == undefined) {
         return {
             props: {
-                notFound: true
+                notFound: true,
+                statusCode: 404
             }
         }
     }
