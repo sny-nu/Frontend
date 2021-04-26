@@ -1,3 +1,18 @@
+.homeIntro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+        @apply text-green-500;
+    }
+
+    p {
+        @apply mt-6;
+    }
+}
+
 .howItWorks {
     @apply text-center;
 

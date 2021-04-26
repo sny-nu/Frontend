@@ -1,11 +1,12 @@
 import Link from 'next/link';
 
+import styles from './nav.module.scss';
+
 export default function NavItem({ children, path, onClick, logo }) {
     if (logo) {
         return (
             <Link href={path}>
-                <a onClick={onClick}
-                    className="">
+                <a onClick={onClick}>
                     { children }
                 </a>
             </Link>
@@ -13,9 +14,7 @@ export default function NavItem({ children, path, onClick, logo }) {
     }
     return (
         <Link href={path}>
-            <a onClick={onClick}
-                className="inline-block py-2 mx-2 md:font-medium font-semibold md:px-0 lg:mx-3 md:text-center 
-                    focus:text-green-500 hover:text-green-500 transition duration-300 ease-in-out">
+            <a onClick={onClick} className={styles.navItem}>
                 { children }
             </a>
         </Link>

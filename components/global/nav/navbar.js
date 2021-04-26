@@ -3,24 +3,26 @@ import { XIcon, MenuIcon } from '@heroicons/react/outline'
 import { useState } from 'react';
 import NavItem from './navItem';
 
+import styles from './nav.module.scss';
+
 export default function Navbar() {
     const [ isOpen, setOpen ] = useState(false);
     
 
     return (
-        <nav className="lg:container mx-auto w-full lg:px-6">
-            <div className="flex items-center justify-between px-6 py-3 h-24">
-                <div className="z-50 flex flex-row">
+        <nav className={styles.navbar}>
+            <div className={styles.navbar__flex}>
+                <div className={styles.navbar__left}>
                     <NavItem 
                         path="/"
                         onClick={() => setOpen(isOpen => false)}
                         logo={true}
                     >
-                        <Logo className="w-12 h-12 mr-4 cursor-pointer" />
+                        <Logo className={styles.logo} />
                     </NavItem>
                 </div>
-                <div className={(isOpen == true ? "z-40 fixed top-0 left-0 h-full w-full bg-gray-900 flex flex-col justify-center" : "hidden") + " md:w-3/4  md:flex-row md:flex"}>
-                    <div className="p-0 flex md:flex-row flex-col items-center md:w-2/3  justify-center w-full">
+                <div className={(isOpen == true ? styles.navbar__middle__mobile : styles.navbar__middle__hidden) + " " + styles.navbar__middle}>
+                    <div className={styles.navbar__middle__items}>
                         <NavItem 
                             path="/"
                             onClick={() => setOpen(isOpen => false)}
@@ -35,11 +37,10 @@ export default function Navbar() {
                         </NavItem>
                     </div>
                 </div>
-                <div className="md:hidden z-50">
+                <div className={styles.navbar__mobile}>
                     <button 
                         type="button" onClick={() => setOpen(isOpen => !isOpen)} 
                         aria-label="open mobile menu" 
-                        className="mobileMenu block text-gray-500 pr-3 hover: focus: focus:outline-none"
                         >
                         { isOpen ? <XIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" /> }
                     </button>

@@ -1,0 +1,105 @@
+.navbar {
+    @apply mx-auto;
+    @apply w-full;
+
+    @screen lg {
+        @apply container;
+        @apply px-6
+    }
+
+    &__flex {
+        @apply flex;
+        @apply items-center;
+        @apply justify-between;
+        @apply px-6;
+        @apply py-3;
+        @apply h-24;
+    }
+
+    &__left {
+        @apply z-50;
+    }
+
+    &__middle {
+        &__hidden {
+            @apply hidden;
+        }
+
+        &__mobile {
+            @apply z-40;
+            @apply fixed;
+            @apply top-0;
+            @apply left-0;
+            @apply h-full;
+            @apply w-full;
+            @apply bg-gray-900;
+            @apply flex;
+            @apply flex-col;
+            @apply justify-center;
+        }
+
+        @screen md {
+            @apply flex;
+            @apply flex-row;
+            @apply w-3/4;
+        }
+
+        &__items {
+            @apply p-0;
+            @apply flex;
+            @apply flex-col;
+            @apply items-center;
+            @apply justify-center;
+            @apply w-full;
+
+            @screen md {
+                @apply w-2/3;
+                @apply flex-row;
+            }
+        }
+    }
+
+    &__mobile {
+        @apply z-50;
+
+        @screen md {
+            @apply hidden;
+        }
+
+        button {
+            @apply block;
+            @apply text-gray-500;
+            @apply pr-3;
+            @apply focus:outline-none;
+        }
+    }
+}
+
+.navItem {
+    @apply inline-block;
+    @apply py-2;
+    @apply mx-2; 
+    @apply font-semibold; 
+    @apply focus:text-green-500;
+    @apply hover:text-green-500;
+    @apply transition;
+    @apply duration-300;
+    @apply ease-in-out;
+
+    @screen md {
+        @apply font-medium;
+        @apply px-0;
+        @apply text-center;
+    }
+
+    @screen lg {
+        @apply mx-3
+    }
+}
+
+.logo {
+    @apply w-12;
+    @apply h-12;
+    @apply mr-4;
+    @apply cursor-pointer;
+}
