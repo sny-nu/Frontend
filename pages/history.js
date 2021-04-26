@@ -1,14 +1,14 @@
-import Layout from "../layouts/default";
 import HistoryHeader from "../components/page/history/header";
 import Head from 'next/head';
+import DefaultLayout from "../layouts/default";
 
 export default function History() {
     return (
-        <Layout>
+        <DefaultLayout>
             <Head>
                 <title>History | sny.nu</title>
             </Head>
             <HistoryHeader />
-        </Layout>
+        </DefaultLayout>
     )
 }

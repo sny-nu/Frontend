@@ -5,7 +5,7 @@ import BigText from "../../ui/text/bigText";
 import Container from "../../ui/container";
 import H3 from "../../ui/text/h3";
 
-import styles from "../../../styles/pages/history.module.scss";
+import styles from "./history.module.scss";
 
 export default function HistoryHeader() {
     const [history, setHistory] = useState([]);
@@ -18,7 +18,7 @@ export default function HistoryHeader() {
     }, []);
 
     return (
-        <Container>
+        <Container className={styles.header}>
             <H3>
                 Your sny<span className="text-green-500">.</span>nu history
             </H3>
@@ -27,7 +27,7 @@ export default function HistoryHeader() {
                 Well you found the correct page! Below are all your shortened urls that you made from this webbrowser.
             </BigText>
             { cookieValue ? (
-                <div className={styles.history__grid}>
+                <div className={styles.header__grid}>
                     {history.map((url) => (
                         <HistoryItem url={url} key={url.hash} />
                     ))}

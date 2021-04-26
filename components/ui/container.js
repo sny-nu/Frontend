@@ -1,6 +1,6 @@
 export default function Container({ children, className }) {
     return (
-        <div className={"mx-auto container py-5 text-center sm:px-4 px-6 " + className}>
+        <div className={"lg:container mx-auto w-full lg:px-12 antialiased px-6 pt-6 " + className}>
             { children }
         </div>
     )

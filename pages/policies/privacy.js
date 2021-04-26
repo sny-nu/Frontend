@@ -1,17 +1,18 @@
-import Layout from '../../layouts/default';
+import DefaultLayout from '../../layouts/default';
 import Head from 'next/head';
 import H3 from '../../components/ui/text/h3';
 import H4 from '../../components/ui/text/h4';
 import NormalText from '../../components/ui/text/normalText';
+import Container from '../../components/ui/container';
 
 export default function Privacy() {
     return(
-        <Layout>
+        <DefaultLayout>
             <Head>
                 <title>Privacy Policy | sny.nu</title>
             </Head>
-            <div className="lg:container mx-auto w-full lg:px-12 antialiased max-w-xl px-6 ">
-                <H3 className="text-3xl font-extrabold leading-10 sm:text-4xl sm:leading-none md:text-4xl xl:text-5xl mb-4">
+            <Container>
+                <H3 className="mb-4">
                     Privacy Policy sny<span className="text-green-500">.</span>nu
                 </H3>
                 <NormalText> This privacy policy ("Policy") describes how the personally identifiable information ("Personal Information") you may provide on 
@@ -272,7 +273,7 @@ export default function Privacy() {
                 <NormalText className="mb-4">If you would like to contact us to understand more about this Policy or wish to contact us concerning any 
                     matter relating to individual rights and your Personal Information, you may send an email to &#105;&#110;fo&#64;&#115;&#110;&#121;.n&#117;.</NormalText>
                 <NormalText>This document was last updated on March 10, 2021</NormalText>
-            </div>
-        </Layout>
+            </Container>
+        </DefaultLayout>
     )
 }

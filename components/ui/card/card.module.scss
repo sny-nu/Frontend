@@ -1,0 +1,41 @@
+.card {
+    @apply bg-gray-700;
+    @apply rounded-xl;
+    @apply shadow-lg;
+    @apply h-auto;
+    @apply w-full;
+}
+
+.analyticsCardContent {
+    &__topText {
+        @apply mb-4;
+        @apply text-gray-400;
+    }
+
+    &__data {
+        @apply flex;
+        @apply flex-row;
+
+        p {
+            @apply ml-1;
+            @apply mt-auto;
+            @apply content-end;
+            @apply text-gray-400;
+        }
+    }
+}
+
+.iconCardContent {
+    p {
+        @apply p-2;
+    }
+
+    &__icon {
+        @apply flex;
+        @apply flex-row;
+
+        h6 {
+            @apply my-auto;
+        }
+    }
+}

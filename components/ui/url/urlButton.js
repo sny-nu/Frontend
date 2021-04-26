@@ -1,3 +1,5 @@
+import styles from "./url.module.scss";
+
 export default function UrlInput({ children, onClick, color }) {
     let cssColor = ""
     switch(color) {
@@ -12,9 +14,7 @@ export default function UrlInput({ children, onClick, color }) {
             break;
     }
     return (
-        <button className={`${cssColor} h-14 md:w-48 relative top-0 right-0 text-gray-900 text-base font-bold 
-            leading-6 transition duration-500 ease-in-out focus:outline-none
-            rounded-full w-full md:h-16`}
+        <button className={`${cssColor} ${styles.urlButton}`}
             onClick={onClick}
             name="url button"
         >

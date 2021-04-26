@@ -1,0 +1,79 @@
+.safeRedirect {
+    @apply inline-flex;
+    @apply items-center;
+    @apply mt-2;
+
+    input {
+        @apply text-green-500;
+        @apply rounded;
+    }
+
+    p {
+        @apply ml-2;
+        @apply text-gray-400;
+    }
+}
+
+.urlButton {
+    @apply h-14;
+    @apply relative;
+    @apply top-0;
+    @apply right-0;
+    @apply text-gray-900;
+    @apply text-base;
+    @apply font-bold;
+    @apply leading-6;
+    @apply transition;
+    @apply duration-500;
+    @apply ease-in-out;
+    @apply focus:outline-none;
+    @apply rounded-full;
+    @apply w-full;
+    
+    @screen md {
+        @apply h-16;
+        @apply w-48;
+    }
+}
+
+.urlHolder {
+    @apply relative; 
+    @apply flex; 
+    @apply flex-col;
+    @apply items-center; 
+    @apply max-w-2xl; 
+    @apply mx-auto;
+    @apply mt-6;
+    @apply overflow-hidden;
+    @apply text-center;
+    @apply rounded-3xl;
+    @apply bg-gray-700;
+    @apply p-2;
+
+    @screen md {
+        @apply flex-row;
+        @apply rounded-full;
+        @apply h-20;
+
+    }
+}
+
+.urlInput {
+    @apply w-full;
+    @apply h-14;
+    @apply px-4;
+    @apply py-2;
+    @apply font-medium;
+    @apply text-gray-900;
+    @apply focus:outline-none;
+    @apply rounded-full;
+    @apply mb-2;
+    @apply border-none;
+
+    @screen md {
+        @apply px-6;
+        @apply mb-0;
+        @apply mr-2;
+        @apply h-16;
+    }
+}

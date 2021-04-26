@@ -1,0 +1,104 @@
+.cookies {
+    @apply bg-gray-800;
+
+    &__container {
+        @apply mx-auto;
+        @apply w-full;
+        @apply z-50;
+        @apply flex;
+        @apply flex-col;
+        @apply items-center;
+        @apply justify-between;
+        @apply px-6;
+        @apply py-3;
+        @apply text-xs;
+
+        @screen md {
+            @apply h-20;
+            @apply flex-row;
+        }
+
+        @screen lg {
+            @apply px-12;
+            @apply container;
+        }
+    }
+
+    &__buttons {
+        @apply w-full;
+        @apply flex;
+        @apply flex-row;
+        @apply justify-end;
+        @apply mt-2;
+
+        @screen md {
+            @apply w-2/5;
+            @apply ml-8;
+            @apply mt-0;
+        }
+
+        button {
+            @apply w-1/2;
+            @apply py-2;
+            @apply mr-2;
+            @apply rounded-full;
+            @apply focus:outline-none;
+        }
+    }
+
+    &__accept {
+        @apply bg-green-500;
+    }
+
+    &__decline {
+        @apply bg-red-500;
+    }
+}
+
+.footer {
+    @apply h-auto;
+    @apply text-gray-400;
+    @apply flex;
+    @apply text-sm;
+    @apply items-center;
+    @apply justify-between;
+    @apply flex-col;
+    @apply py-6;
+    @apply px-6;
+
+    @screen md {
+        @apply h-24;
+        @apply flex-row;
+    }
+
+    @screen lg {
+        @apply container;
+        @apply mx-auto;
+        @apply px-12;
+    }
+
+    &__right { 
+        @apply flex;
+        @apply text-center;
+        @apply justify-between;
+        @apply flex-col;
+
+        @screen md {
+            @apply flex-row;
+            @apply w-2/4;
+        }
+
+        @screen lg {
+            @apply w-2/5;
+        }
+
+    }
+
+    a, p {
+        @apply py-2;
+
+        @screen md {
+            @apply py-0;
+        }
+    }
+}

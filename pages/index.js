@@ -1,15 +1,15 @@
 import HomeIntro from "../components/page/home/homeIntro";
 import HowItWorks from "../components/page/home/howItWorks";
 import Navbar from "../components/global/nav/navbar";
-import Footer from "../components/global/footer";
 import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
+import EmptyLayout from "../layouts/empty";
 
-import styles from "../styles/pages/home.module.scss";
+import styles from "../styles/page.module.scss";
 
 export default function Home() {
     return (
-        <>
-            <div className={styles.home}>
+        <EmptyLayout>
+            <div className={styles.fullScreen}>
                 <Navbar />
                 <HomeIntro />
                 <div className="w-full">
@@ -17,7 +17,6 @@ export default function Home() {
                 </div>
             </div>
             <HowItWorks />
-            <Footer />
-        </>
+        </EmptyLayout>
     )
 }
