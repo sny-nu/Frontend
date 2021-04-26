@@ -5,7 +5,6 @@ import Error from "../components/page/error/error";
 import Head from "next/head";
 
 export default function ErrorPage({ statusCode }) {
-    console.log(statusCode);
     return (
         <EmptyLayout>
             <Head>
