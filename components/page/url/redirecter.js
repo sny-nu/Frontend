@@ -29,24 +29,22 @@ export default function Redirecter({ url }) {
     }
 
     return (
-        <div className={styles.center}>
-            <Container className={styles.center__container}>
-                <H3>Redirecting you in:</H3>
-                <H2 className={"font-black " + (redirectBlocked ? "text-red-500" : (countDown <= 20 ? "text-red-500" : "text-orange-500"))}>
-                    { redirectBlocked ?  "Stopped" : (countDown == 0 ? "Redirecting" : (countDown / 10).toFixed(1)) }
-                </H2>
-                <BigText className={styles.center__text}>
-                    If you don't want to be redirected to this URL please click on the red stop button below to stay on this page.
-                </BigText>
+        <Container className={styles.center}>
+            <H3>Redirecting you in:</H3>
+            <H2 className={"font-black " + (redirectBlocked ? "text-red-500" : (countDown <= 20 ? "text-red-500" : "text-orange-500"))}>
+                { redirectBlocked ?  "Stopped" : (countDown == 0 ? "Redirecting" : (countDown / 10).toFixed(1)) }
+            </H2>
+            <BigText className={styles.center__text}>
+                If you don't want to be redirected to this URL please click on the red stop button below to stay on this page.
+            </BigText>
 
-                {/* URL with stop redirect */}
-                <UrlHolderLayout>
-                    <UrlInput url={url} disabled={true}/>
-                    <UrlButton color="red" onClick={changeRedirect}>
-                        { redirectBlocked ? "Go to page" : "Stop Redirect" }
-                    </UrlButton>
-                </UrlHolderLayout>
-            </Container>
-        </div>
+            {/* URL with stop redirect */}
+            <UrlHolderLayout>
+                <UrlInput url={url} disabled={true}/>
+                <UrlButton color="red" onClick={changeRedirect}>
+                    { redirectBlocked ? "Go to page" : "Stop Redirect" }
+                </UrlButton>
+            </UrlHolderLayout>
+        </Container>
     )
 }
