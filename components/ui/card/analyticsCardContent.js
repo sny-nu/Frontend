@@ -7,7 +7,7 @@ export default function AnalyticsCardContent({ title, value, type }) {
     return (
         <div className={styles.analyticsCardContent}>
             <NormalText className={styles.cardContent__topText}>{ title }</NormalText>
-            <div className={analyticsCardContent__data}>
+            <div className={styles.analyticsCardContent__data}>
                 <H4>{ value }</H4>
                 <NormalText>{ type }</NormalText>
             </div>

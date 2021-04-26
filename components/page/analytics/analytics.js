@@ -7,7 +7,7 @@ import styles from "./analytics.module.scss";
 
 export default function Analytics({ stats }) {
     return (
-        <Container>
+        <Container className={styles.analytics}>
             <H3>Analytics</H3>
             <div className={styles.analytics__grid}>
                 <Card className={styles.analytics__card}>

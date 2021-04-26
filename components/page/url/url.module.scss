@@ -4,11 +4,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    @apply w-full;
     @apply text-center;
-
-    &__container {
-        min-height: 350px;
-    }
 
     &__text {
         @apply max-w-lg;
